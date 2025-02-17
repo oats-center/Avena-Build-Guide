@@ -30,7 +30,7 @@ Setting up Tailscale on your computer is a straightforward process that enables 
 # TimescaleDB
 Setting up a TimescaleDB account with a Performance Tier involves several steps to ensure you can efficiently manage and scale your time-series data. Here's a comprehensive guide to assist you:
 1. Sign Up for a Timescale Account:
- - Navigate to the Timescale sign-up page.
+ - Navigate to the Timescale sign-up page (https://www.timescale.com/).
  - Provide the necessary information to create your account.
 2. Create a New Service:
  - After logging in, access the Timescale Console.
@@ -60,7 +60,7 @@ Setting up a TimescaleDB account with a Performance Tier involves several steps 
 Setting up a DigitalOcean Droplet with specific configurations is a straightforward process. Here's how you can create a Droplet with 1 GiB RAM, 1 vCPU, 25 GiB SSD, and 1,000 GiB (1 TB) transfer, priced at $6.00 per month:
 
 1. Sign Up or Log In to DigitalOcean:
- - Visit the DigitalOcean website and sign up for an account or log in if you already have one.
+ - Visit the DigitalOcean website (https://www.digitalocean.com/) and sign up for an account or log in if you already have one.
 2. Navigate to the Droplet Creation Page:
  - Once logged in, click on the "Create" button in the top-right corner of the dashboard.
  - Select "Droplets" from the dropdown menu.
