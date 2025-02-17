@@ -1,2 +1,29 @@
-# Step 1
-Download Tailscale
+# Tailscale
+Setting up Tailscale on your computer is a straightforward process that enables secure networking between your devices. Here's how you can get started:
+
+1. Create a Tailscale Account:
+ - Visit the Tailscale website (https://tailscale.com/) and click on "Get Started."
+ - Sign up using your preferred identity provider (Google, Microsoft, GitHub, etc.).
+2. Install Tailscale on Your Computer:
+ - Windows:
+   - Download the latest .exe installer from the Tailscale Downloads page (https://tailscale.com/download)
+   - Run the installer and follow the prompts.
+   - After installation, click on the Tailscale icon in your system tray and select "Log in" to authenticate. 
+ - macOS:
+   - Download the macOS app from the Tailscale Downloads page.
+   - Open the downloaded .dmg file and drag Tailscale into your Applications folder.
+   - Launch Tailscale and sign in with your account.
+ - Linux:
+   - Open a terminal window.
+   - Run the following command to install Tailscale:
+     curl -fsSL https://tailscale.com/install.sh | sh
+   - After installation, start Tailscale with:
+     sudo tailscale up
+   - Follow the authentication link provided in the terminal to log in.
+ - Add Additional Devices:
+   - Repeat the installation steps on other devices you wish to add to your Tailscale network.
+   - Ensure you log in with the same Tailscale account on all devices.
+ - Verify Connectivity:
+   - Once logged in, each device will be assigned a unique IP address in the 100.x.x.x range.
+   - You can view connected devices and their IPs in the Tailscale admin console or the Tailscale app interface.
+   - Test the connection by pinging one device from another using these IP addresses.
