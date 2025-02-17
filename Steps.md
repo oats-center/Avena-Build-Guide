@@ -6,11 +6,11 @@ Setting up Tailscale on your computer is a straightforward process that enables 
  - Sign up using your preferred identity provider (Google, Microsoft, GitHub, etc.).
 2. Install Tailscale on Your Computer:
  - Windows:
-   - Download the latest .exe installer from the Tailscale Downloads page (https://tailscale.com/download)
+   - Download the latest .exe installer from the Tailscale Downloads page (https://tailscale.com/download).
    - Run the installer and follow the prompts.
    - After installation, click on the Tailscale icon in your system tray and select "Log in" to authenticate. 
  - macOS:
-   - Download the macOS app from the Tailscale Downloads page.
+   - Download the macOS app from the Tailscale Downloads page (https://tailscale.com/download).
    - Open the downloaded .dmg file and drag Tailscale into your Applications folder.
    - Launch Tailscale and sign in with your account.
  - Linux:
