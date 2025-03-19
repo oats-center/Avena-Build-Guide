@@ -21,7 +21,7 @@
   #  * verify-full - Always SSL (verify that the certification presented by the server was signed by a trusted CA and the server host name matches the one in the certificate)
   #dsn="postgres://tsdbadmin:apples4lfrfr@h9i3de7ywe.ygvi7vtwgc.tsdb.cloud.timescale.com:36699/tsdb?sslmode=disable"
   #dsn="postgres://tsdbadmin:apples4lfrfr@h9i3de7ywe.ygvi7vtwgc.tsdb.cloud.timescale.com:36699/tsdb?sslmode=require"
-  dsn="postgres://tsdbadmin:apples4lfrfr@$POSTGRESQL_HOST/tsdb?sslmode=disable"
+  dsn="postgres://{TSDB_USER}:{TSDB_PASSWORD}@$POSTGRESQL_HOST/tsdb?sslmode=disable"
 
 	
   # Max open connections.
@@ -82,7 +82,7 @@
   # is never exposed. Changing this secret will invalidate all login and API
   # tokens. The following command can be used to generate a random secret:
   #   openssl rand -base64 32
-  secret="sLMjo7qUy69swdKHzEck"
+  secret="{VERY_IMPORTANT_SECRET}"
 
 
 [integration]
