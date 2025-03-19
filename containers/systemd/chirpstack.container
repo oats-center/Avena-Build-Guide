@@ -1,0 +1,20 @@
+[Unit]
+Description=Chirpstack
+
+[Container]
+ContainerName=chirpstack
+Image=docker.io/chirpstack/chirpstack:4
+Volume=./chirpstack/config:/etc/chirpstack/
+Volume=./chirpstack/lorawan-devices:/opt/lorawan-devices
+Network=avena.network
+Exec=-c /etc/chirpstack
+Environment=MQTT_BROKER_HOST=mosquitto
+Environment=REDIS_HOST=redis
+Environment=POSTGRESQL_HOST={TIMESCALEDB_HOST}
+PublishPort={SERVER_TAILSCALE_IP}:8080:8080
+
+[Service]
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target default.target

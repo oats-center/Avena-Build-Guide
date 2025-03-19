@@ -1,0 +1,14 @@
+[Unit]
+Description=Redis
+
+[Container]
+ContainerName=redis
+Image=docker.io/redis:7-alpine
+Volume=redis-data:/data
+Network=avena.network
+
+[Service]
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target default.target chirpstack.container

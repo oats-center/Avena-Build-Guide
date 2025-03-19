@@ -1,0 +1,29 @@
+[Unit]
+Description=NATS 
+
+[Container]
+ContainerName=nats
+Image=docker.io/library/nats:2.10.25
+Exec=--config /nats-server.conf
+PublishPort={SERVER_TAILSCALE_IP}:1883:1883
+PublishPort={SERVER_TAILSCALE_IP}:4222:4222
+PublishPort={SERVER_TAILSCALE_IP}:6222:6222
+PublishPort={SERVER_TAILSCALE_IP}:7422:7422
+PublishPort={SERVER_TAILSCALE_IP}:8222:8222
+Network=avena.network
+
+# Pass in NATS config
+Volume=./nats/nats-server.conf:/nats-server.conf
+## Example token is empty. To get this working, you need to generate
+## a valid token with NATS' nsc
+Volume=./nats/operator.jwt:/operator.jwt
+
+# Local storage for NATS JetStream (needed for MQTT broker)
+Volume=nats:/data
+Volume=nats-jwt:/jwt
+
+[Service]
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target default.target

@@ -1,0 +1,18 @@
+[Unit]
+Description=Chirpstack Gateway Bridge
+
+[Container]
+ContainerName=chirpstack-gateway-bridge
+Image=docker.io/chirpstack/chirpstack-gateway-bridge:4
+Volume=./chirpstack-gateway-bridge:/etc/chirpstack-gateway-bridge
+Network=avena.network
+#Environment=INTEGRATION__MQTT__EVENT_TOPIC_TEMPLATE=us915/gateway/{{ .GatewayID }}/event/{{ .EventType }}
+#Environment=REDIS_HOST=INTEGRATION__MQTT__STATE_TOPIC_TEMPLATE=us915/gateway/{{ .GatewayID }}/state/{{ .StateType }}
+#Environment=INTEGRATION__MQTT__COMMAND_TOPIC_TEMPLATE=us915/gateway/{{ .GatewayID }}/command/#
+PublishPort=100.104.235.126:1700:1700/udp
+
+[Service]
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target default.target
