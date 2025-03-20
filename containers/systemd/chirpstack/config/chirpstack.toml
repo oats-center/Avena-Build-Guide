@@ -18,9 +18,7 @@
   #  * disable - no SSL
   #  * require - Always SSL (skip verification)
   #  * verify-ca - Always SSL (verify that the certificate presented by the server was signed by a trusted CA)
-  #  * verify-full - Always SSL (verify that the certification presented by the server was signed by a trusted CA and the server host name matches the one in the certificate)
-  #dsn="postgres://tsdbadmin:apples4lfrfr@h9i3de7ywe.ygvi7vtwgc.tsdb.cloud.timescale.com:36699/tsdb?sslmode=disable"
-  #dsn="postgres://tsdbadmin:apples4lfrfr@h9i3de7ywe.ygvi7vtwgc.tsdb.cloud.timescale.com:36699/tsdb?sslmode=require"
+  #  * verify-full - Always SSL (verify that the certification presented by the server was signed by a trusted CA and the server host name matches the one in the certificate)  
   dsn="postgres://{TSDB_USER}:{TSDB_PASSWORD}@$POSTGRESQL_HOST/tsdb?sslmode=disable"
 
 	
