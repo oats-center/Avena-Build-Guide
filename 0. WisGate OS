@@ -1,0 +1,22 @@
+To configure your RAKwireless WisGate Edge Pro 2 gateway using its local Wi-Fi access point (AP), follow these steps:
+
+1. Power On the Gateway: Ensure all antennas are securely connected before powering on the gateway.​
+2. Connect to the Gateway's Wi-Fi AP:
+ - By default, the gateway operates in Wi-Fi AP mode.​
+ - On your computer or mobile device, scan for available Wi-Fi networks and connect to the SSID named RAK72XX_xxxx, where xxxx represents the last two bytes of the gateway’s MAC address. ​
+ - No password is required for this connection.​
+3. Access the Web User Interface (Web UI):
+ - Once connected to the gateway's Wi-Fi, open a web browser.​
+ - Navigate to http://192.168.230.1 to access the Web UI login page. ​
+4. Set the Login Password:
+ - Upon first access, you'll be prompted to set a new password for security purposes.​
+ - The password must be at least 12 characters long and include at least one special character, one number, and one standard Latin letter. ​
+ - After setting the password, click the "Set password" button to apply it.​
+5. Log In to the Web UI:
+ - After setting the password, you'll be redirected to the login page.​
+ - Enter the username root and the password you just set to log in. ​
+7. Configure the Gateway Settings:
+ - After logging in, you'll land on the LoRaWAN Statistics page.​
+ - Click the second icon in the left-hand column to get to the Configuration page.
+ - Ensure the follwoing:
+Navigate through the various configuration options to set up your gateway as needed.​
